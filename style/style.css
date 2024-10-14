@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+.img-fluid{
+  width: 60%;
+  border-radius: 60%;
+  box-shadow: 0 0 15px 5px rgba(78, 133, 110, 0.8);
+} 
+.navbar {
+  background-color: #ffffff;
+}
+.navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+
+.navbar-nav .nav-item {
+  padding: 0 .5rem;
+}
+section.hero {
+  background-color: #ecf2ff;
+  padding-top: 80px
+ 
+}
+
+section [class^="container"] {
+  padding: 4rem 2rem;
+}
+
+section:nth-child(2n) {
+  background-color: #51ffb6;
+}
+
+section:not(:first-of-type) {
+  text-align: center;
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #ffffff78;
+    color: #51ffb6;
+}
+
+section.testimonials .container {
+  width: 75%;
+}
+
+section.contact .social-media a {
+  padding: 0 0.5rem;
+  font-size: 30px;
+}
+.social-media a{
+  font-size: 25px;
+  padding: 10px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: all .3s;
+}
+a:not(.btn):hover {
+  color: #feffff;
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.5s;
+}
+.navbar-nav .nav-link:hover {
+  color: #51ffb6;
+}
+

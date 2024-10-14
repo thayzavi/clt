@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Freelancer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="freelanceForm" action="#" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Formulário de Freelancer</legend>
+
+        <label for="nome">Nome*</label>
+        <input type="text" id="nome" name="nome" required><br>
+        <br>
+        <label for="sobrenome">sobrenome*</label>
+        <input type="text" id="sobrenome" name= "sobrenome" required><br>
+        <br>
+        <label for="telefone">Telefone*</label>
+        <input type="tel" id="telefone" name= "telefone" placeholder="(99)99999-9999"><br>
+        <br>
+        <label for="email">E-mail*</label>
+        <input type="email" id="email" name= "email" required><br>
+        <br>
+        <label for="mensagem">mensagem*</label>
+        <textarea id="sobrenome" name= "mensagem" rows="6" required></textarea><br>
+
+        <label for="lingua">Língua</label>
+        <select id="lingua" name="lingua">
+        <option value="pt-br">Português (pt-br)</option>
+        <option value="en">Inglês (en)</option>
+        <option value="es">Espanhol (es)</option>
+    </select><br>
+
+        <label for="arquivo">Protótipo (Requisitos)</label>
+        <input type="file" id="arquivo" name="arquivo"><br>
+
+        <label for="linguagens">As linguagens que  você prefere? </label>
+        <select id="linguagens" name="linguagens" multiple>
+            <option value="java">Java</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="php">PHP</option>
+        </select><br>
+        <br>
+
+        <label> Banco de Dados | </label>
+        
+        <input type="radio" id="mysql" name="banco" value="Mysql" checked>
+        <label for="mysql">MySQL |</label>
+       
+        <input type="radio" id="postgresql" name="banco" value="Postgresql">
+        <label for="postgresql">Postgresql | </label>
+        
+        <input type="radio" id="mongodb" name="banco" value="Mongodb">
+        <label for="mongodb">Mongodb | </label>
+
+        <input type="radio" id="na" name="banco" value="N/A">
+        <label for="na">N/A | </label>
+
+        <input type="radio" id="outra" name="banco" value="Outra">
+        <label for="outra">Outra</label><br>
+
+        <br>
+        <label>Turno Para Reuniões</label>
+        <br>
+        <input type="checkbox" id="manha" name="turno" value="Manhã">
+        <label for="manha">Manhã</label>
+        <input type="checkbox" id="tarde" name="turno">
+        <label for="tarde">Tarde</label>
+        <input type="checkbox" id="noite" name="turno" value="noite">
+        <label for="noite">Noite</label><br>
+
+        <label for="horario">Horário Sugerido*</label>
+        <input type="time" id="data" name="data" required><br>
+
+        <br>
+        <label for="data">Data Prevista Entrega</label>
+        <input type="date" id="data" name="data" required><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+     </fieldset>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
